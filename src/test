@@ -1,0 +1,48 @@
+<CentralLeft>
+          <TopP>Bill</TopP>
+          <BillInput>
+            <Inp placeholder='0' type={"number"}/>
+          </BillInput>
+          <MiddleText>
+            <MiddleP>Select Tip %</MiddleP>
+          </MiddleText>
+
+          <TipBox>
+          <ButtonTop>
+             <Buttons 
+             style={{backgroundColor: active===1?"#9FE8DF":"#00474B", color: active===1?"#00474B": "white"}} 
+             onClick={()=>{handleClick(1)}} 
+             >
+             5%</Buttons>
+             <Buttons 
+             style={{backgroundColor: active===2?"#9FE8DF":"#00474B", color: active===2?"#00474B": "white"}} 
+             onClick={()=>{handleClick(2)}} 
+             >10%</Buttons>
+             <Buttons
+             style={{backgroundColor: active===3?"#9FE8DF":"#00474B", color: active===3?"#00474B": "white"}} 
+             onClick={()=>{handleClick(3)}} 
+             >15%</Buttons>
+          </ButtonTop>
+
+          <ButtonBottom>
+             <Buttons
+             style={{backgroundColor: active===4?"#9FE8DF":"#00474B", color: active===4?"#00474B": "white"}} 
+             onClick={()=>{handleClick(4)}} 
+             >25%</Buttons>
+             <Buttons
+             style={{backgroundColor: active===5?"#9FE8DF":"#00474B", color: active===5?"#00474B": "white"}} 
+             onClick={()=>{handleClick(5)}} 
+             >50%</Buttons>
+             <ButtonsLast type={"number"} placeholder='Custom ' ></ButtonsLast>
+          </ButtonBottom> 
+          </TipBox>
+
+          <MiddleText> 
+          <MiddleP>Number of People</MiddleP>
+        </MiddleText>
+
+
+        <BottomInput>
+          <BottomInp placeholder='0'/>
+        </BottomInput>
+        </CentralLeft>
